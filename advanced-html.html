@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia-Rich Webpage & Registration Form</title>
+    
+    <style>
+        body {
+            background-color: #0a192f; /* Dark blue background */
+            font-family: 'Arial', sans-serif;
+            color: #00d9ff; /* Neon blue text */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #00d9ff; /* Bright blue cyber look */
+            text-align: center;
+            text-shadow: 0px 0px 5px #00d9ff;
+        }
+
+        ol {
+            background: #121212; /* Dark gray background */
+            padding: 15px;
+            border-radius: 8px;
+            color: #00d9ff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #121212; /* Cyber dark table */
+        }
+
+        th, td {
+            border: 1px solid #1e3a8a; /* Blue border */
+            padding: 10px;
+            text-align: left;
+            color: #00d9ff;
+        }
+
+        th {
+            background-color: #1e3a8a; /* Strong blue */
+        }
+
+        tr:nth-child(even) {
+            background-color: #0f2d52; /* Darker blue for contrast */
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #00d9ff;
+        }
+
+        form {
+            background: #121212;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #00d9ff;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #00d9ff;
+            border-radius: 5px;
+            background: #0a192f;
+            color: #00d9ff;
+        }
+
+        button {
+            background: #00ff00;
+            color: black;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #00d9ff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Multimedia-Rich Webpage</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Image</h2>
+    <img src="https://images.pexels.com/photos/2036656/pexels-photo-2036656.jpeg" alt="Man holding a laptop computer" width="600">
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St</td>
+                <td>(123) 456-7890</td>
+                <td>john@blah.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Elm St</td>
+                <td>(234) 567-8901</td>
+                <td>jane@yadiyadi.com</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>789 Oak St</td>
+                <td>(345) 678-9012</td>
+                <td>bob@papalala.com</td>
+            </tr>
+            <tr>
+                <td>Alice Brown</td>
+                <td>321 Pine St</td>
+                <td>(456) 789-0123</td>
+                <td>alice@kingkong.com</td>
+            </tr>
+            <tr>
+                <td>Tom Wilson</td>
+                <td>654 Cedar St</td>
+                <td>(567) 890-1234</td>
+                <td>tom@airport.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" id="news" name="interests" value="newsletter">
+            <label for="news">Newsletter</label>
+
+            <input type="checkbox" id="updates" name="interests" value="updates">
+            <label for="updates">Product Updates</label>
+        </fieldset><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Audio Element -->
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <h2>Video</h2>
+    <video controls width="600">
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
